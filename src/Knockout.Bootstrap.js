@@ -62,7 +62,7 @@
     };
 
     stringTemplateSource.prototype.text = function () {
-        return this.api.currentView[this.template] || this.api.templateCache[this.api.shared];
+        return this.api.currentView[this.template] || this.api.templateCache[this.api.shared][this.template];
     };
 
     return {
