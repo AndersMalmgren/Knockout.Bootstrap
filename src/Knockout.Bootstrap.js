@@ -31,7 +31,7 @@
             var onLoaded = function (loaded) {
                 this.templateCache[root] = loaded;
                 this.currentView = loaded;
-                callback(this.currentRoot);
+                callback();
             } .bind(this);
 
             if (this.templateCache[root] !== undefined) {
