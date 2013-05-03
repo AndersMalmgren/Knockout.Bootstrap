@@ -4,6 +4,9 @@ OtherViewModel = function () {
 TestViewModel = function () {
 };
 
+TestModel = function () {
+};
+
 DataSource = function(templates) {
     this.templates = templates;
 };
@@ -40,4 +43,27 @@ test("When using a shared template after a none shared has been loaded", functio
         var template = engine.makeTemplateSource("TestView").text();
         equal(template, expected, "It should find and use shared template correctly");
     });
+});
+
+modelNameTest = function (model) {
+    var expected = "TestView Content";
+    ko.test({
+        Test: { TestView: expected }
+    },
+    function (bootstrap) {
+
+        bootstrap.loadView(new model(), function (value) {
+        });
+
+        var template = engine.makeTemplateSource("TestView").text();
+        equal(template, expected, "It should find view");
+    });
+};
+
+test("When using a model with a name ending with ViewModel", function () {
+    modelNameTest(TestViewModel);
+});
+
+test("When using a model with a name ending with Model", function () {
+    modelNameTest(TestModel);
 });
