@@ -22,12 +22,13 @@ ko.setTemplateEngine = function (e) {
     engine = e;
 };
 
-ko.test = function (templates, assert) {
+ko.test = function(templates, assert) {
     var datasource = new DataSource(templates);
-    var bootstrap = ko.bootstrap.init(datasource, function () { });
+    var bootstrap = ko.bootstrap.init(datasource, function() {
+    });
 
     assert(bootstrap);
-}
+};
 
 test("When using a shared template after a none shared has been loaded", function () {
     var expected = "TestView Content";
@@ -66,4 +67,22 @@ test("When using a model with a name ending with ViewModel", function () {
 
 test("When using a model with a name ending with Model", function () {
     modelNameTest(TestModel);
+});
+
+test("When a view is missing", function () {
+    ko.test({ shared: {}, Test: {} },
+    function (bootstrap) {
+
+        bootstrap.loadView(new TestViewModel(), function (value) {
+        });
+
+        var error = null;
+        try {
+            var template = engine.makeTemplateSource("TestView").text();
+        } catch(e) {
+            error = e;
+        }
+
+        ok(error != null, "It should give a meaningfull exception");
+    });
 });

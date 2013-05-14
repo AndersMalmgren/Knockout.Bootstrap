@@ -62,7 +62,12 @@
     };
 
     stringTemplateSource.prototype.text = function () {
-        return this.api.currentView[this.template] || this.api.templateCache[this.api.shared][this.template];
+        var template = this.api.currentView[this.template] || this.api.templateCache[this.api.shared][this.template];
+        if (template == null) {
+            throw "View '" + this.template + "' could not be found";
+        }
+
+        return template;
     };
 
     return {
