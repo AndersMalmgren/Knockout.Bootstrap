@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52DCECD6-6DF7-4AFA-8349-0AD8F2F0F002}"
+	ProjectSection(SolutionItems) = preProject
+		src\Knockout.Bootstrap.js = src\Knockout.Bootstrap.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2CA1FE7B-E198-49A2-930A-67ED871021EC}"
+	ProjectSection(SolutionItems) = preProject
+		test\runner.html = test\runner.html
+		test\test.js = test\test.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
