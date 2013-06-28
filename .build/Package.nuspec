@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Knockout.Bootstrap</id>
+    <version>1.0</version>
+    <authors>Anders Malmgren</authors>
+    <owners>Anders Malmgren</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/AndersMalmgren/Knockout.Bootstrap</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Convention based template bootstrapper for Knockout</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2013</copyright>
+    <tags>Knockout MVVM Convention templates</tags>
+    <dependencies>
+      <dependency id="Knockout.BindingConventions" version="1.0.61.0" />
+    </dependencies>
+  </metadata>
+</package>
