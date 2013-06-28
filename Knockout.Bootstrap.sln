@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{52DCECD6-6DF7-4AFA-8349-0AD8F2F0F002}"
 	ProjectSection(SolutionItems) = preProject
 		src\Knockout.Bootstrap.js = src\Knockout.Bootstrap.js
@@ -10,6 +10,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2CA1FE7B-E
 	ProjectSection(SolutionItems) = preProject
 		test\runner.html = test\runner.html
 		test\test.js = test\test.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{9B0F9DAA-4119-4035-94DF-30EB0EC20106}"
+	ProjectSection(SolutionItems) = preProject
+		.build\build_output.proj = .build\build_output.proj
+		.build\create_nuget_package.cmd = .build\create_nuget_package.cmd
+		.build\EcmaScript.NET.modified.dll = .build\EcmaScript.NET.modified.dll
+		.build\GitVersionInfo.dll = .build\GitVersionInfo.dll
+		.build\ICSharpCode.SharpZipLib.dll = .build\ICSharpCode.SharpZipLib.dll
+		.build\Mono.Security.dll = .build\Mono.Security.dll
+		.build\NGit.dll = .build\NGit.dll
+		.build\NSch.dll = .build\NSch.dll
+		.build\NuGet.Config = .build\NuGet.Config
+		.build\NuGet.exe = .build\NuGet.exe
+		.build\NuGet.targets = .build\NuGet.targets
+		.build\Package.nuspec = .build\Package.nuspec
+		.build\readme.txt = .build\readme.txt
+		.build\Sharpen.dll = .build\Sharpen.dll
+		.build\versions.xml = .build\versions.xml
+		.build\Yahoo.Yui.Compressor.dll = .build\Yahoo.Yui.Compressor.dll
+		.build\Yahoo.Yui.Compressor.MsBuildTask.dll = .build\Yahoo.Yui.Compressor.MsBuildTask.dll
 	EndProjectSection
 EndProject
 Global
